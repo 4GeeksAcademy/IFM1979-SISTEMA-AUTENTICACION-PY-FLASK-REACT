@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Context } from "../store/appContext";
-import "../../styles/crearUsuario.css";
+import "../../styles/user.css";
 
 const Signup = () => {
 	const [correo, setCorreo] = useState('');
@@ -18,7 +18,7 @@ const Signup = () => {
 
     return (
         <div>
-            <h2 className='create'>Crear Usuario</h2>
+            <h2>Crear Usuario</h2>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="correo">Correo Electrónico:</label>

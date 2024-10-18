@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Context } from "../store/appContext";
-import "../../styles/iniciarSesion.css";
+import "../../styles/session.css";
 
 const Login = () => {
 	const [email, setEmail] = useState('');
@@ -31,7 +31,7 @@ const Login = () => {
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Introduce tu correo"
+                    placeholder="Ingresa tu correo"
                     required
                 />
 
@@ -41,16 +41,15 @@ const Login = () => {
                     id="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Introduce tu contraseña"
+                    placeholder="Ingresa tu contraseña"
                     required
                 />
 
-                <button type="submit">Iniciar Sesión</button>
+                <button type="submit">Ingresar</button>
             </form>
             <div className="signup-redirect">
-                <br></br>
-                <p className='text'>¿Aún no te has registrado?</p>
-                <button onClick={handleSignupRedirect}>Regístrate</button>
+                <p>Si no eres usuario registrado</p>
+                <button onClick={handleSignupRedirect}>Regístrate!!!</button>
             </div>
         </div>
     );
